@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Account Deletion | NordVeil Wallet</title>
+  <style>
+    :root {
+      --primary-color: #2a7de1;
+      --bg-color: #f9fafc;
+      --text-color: #333;
+      --card-bg: #fff;
+      --border-radius: 12px;
+      --shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+      --danger-color: #dc2626;
+    }
+
+    body {
+      font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: var(--primary-color);
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+      border-bottom-left-radius: 40px;
+      border-bottom-right-radius: 40px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      font-weight: 700;
+    }
+
+    main {
+      max-width: 850px;
+      margin: 2rem auto;
+      background: var(--card-bg);
+      box-shadow: var(--shadow);
+      border-radius: var(--border-radius);
+      padding: 2.5rem;
+    }
+
+    h2 {
+      color: var(--primary-color);
+      margin-top: 2rem;
+      font-size: 1.5rem;
+    }
+
+    h3 {
+      color: var(--text-color);
+      margin-top: 1.5rem;
+      font-size: 1.2rem;
+    }
+
+    p {
+      margin: 1rem 0;
+      font-size: 1rem;
+    }
+
+    ul, ol {
+      padding-left: 1.5rem;
+      margin: 1rem 0;
+    }
+
+    li {
+      margin: 0.5rem 0;
+    }
+
+    .warning-box {
+      background: #fef2f2;
+      border-left: 4px solid var(--danger-color);
+      padding: 1rem;
+      margin: 1.5rem 0;
+      border-radius: 8px;
+    }
+
+    .warning-box strong {
+      color: var(--danger-color);
+    }
+
+    .info-box {
+      background: #eff6ff;
+      border-left: 4px solid var(--primary-color);
+      padding: 1rem;
+      margin: 1.5rem 0;
+      border-radius: 8px;
+    }
+
+    .language-switcher {
+      text-align: center;
+      margin: 1rem 0;
+    }
+
+    .language-switcher button {
+      background: var(--primary-color);
+      color: white;
+      border: none;
+      padding: 0.5rem 1.5rem;
+      margin: 0 0.5rem;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .language-switcher button:hover {
+      opacity: 0.9;
+    }
+
+    .language-switcher button.active {
+      background: #1e5fb8;
+    }
+
+    .content {
+      display: none;
+    }
+
+    .content.active {
+      display: block;
+    }
+
+    a {
+      color: var(--primary-color);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #777;
+      margin: 3rem 0 2rem;
+    }
+
+    hr {
+      border: 0;
+      border-top: 1px solid #ddd;
+      margin: 2rem 0;
+    }
+
+    @media (max-width: 600px) {
+      main {
+        margin: 1rem;
+        padding: 1.5rem;
+      }
+
+      header h1 {
+        font-size: 1.6rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Account Deletion</h1>
+    <p>NordVeil Wallet App</p>
+  </header>
+
+  <main>
+    <div class="language-switcher">
+      <button onclick="switchLanguage('en')" id="btn-en" class="active">English</button>
+      <button onclick="switchLanguage('ru')" id="btn-ru">Русский</button>
+    </div>
+
+    <!-- English Content -->
+    <div id="content-en" class="content active">
+      <section>
+        <h2>How to Delete Your Account</h2>
+        <p>You can delete your NordVeil Wallet account and all associated data directly from the mobile application. Follow these steps:</p>
+
+        <ol>
+          <li>Open the <strong>NordVeil Wallet</strong> application on your Android device</li>
+          <li>Navigate to <strong>Settings</strong> (tap the gear icon in the bottom navigation)</li>
+          <li>Scroll down and tap on <strong>User Profile</strong> or <strong>Edit Profile</strong></li>
+          <li>Scroll to the bottom of the profile page</li>
+          <li>Tap the <strong>"Delete Account"</strong> button (red button)</li>
+          <li>Read the confirmation dialog carefully</li>
+          <li>Confirm the deletion by tapping <strong>"Delete"</strong></li>
+        </ol>
+
+        <div class="warning-box">
+          <strong>⚠️ Warning:</strong> Account deletion is permanent and irreversible. Once you confirm, all your data will be permanently deleted.
+        </div>
+      </section>
+
+      <section>
+        <h2>What Data Will Be Deleted</h2>
+        <p>When you delete your account, the following data will be permanently removed from our servers and your device:</p>
+        <ul>
+          <li><strong>All Transactions</strong> - Your income and expense records</li>
+          <li><strong>Categories</strong> - Custom and default categories</li>
+          <li><strong>Accounts</strong> - All financial accounts (bank accounts, cash, cards)</li>
+          <li><strong>Budgets</strong> - All budget settings and tracking data</li>
+          <li><strong>Wishes/Goals</strong> - Your savings goals and wish list items</li>
+          <li><strong>User Profile</strong> - Your name, email, and profile settings</li>
+          <li><strong>Sync Data</strong> - All cloud-synced information (if signed in with Google)</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Data Retention Period</h2>
+        <div class="info-box">
+          <p><strong>Immediate Deletion:</strong> Your data is deleted immediately upon confirmation. There is no retention period or grace period for account recovery.</p>
+        </div>
+        <p>The deletion process:</p>
+        <ul>
+          <li>Local database on your device is cleared instantly</li>
+          <li>Cloud data (if any) is removed from Firebase servers immediately</li>
+          <li>No backups or copies are retained after deletion</li>
+          <li>Anonymous usage statistics (if collected) are retained for analytics purposes only</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Before You Delete</h2>
+        <p>Before deleting your account, consider the following:</p>
+        <ul>
+          <li>Export your data if you want to keep a personal record (use the Backup feature in Settings)</li>
+          <li>Make sure you have recorded all pending transactions</li>
+          <li>Consider temporarily disabling the app instead if you're unsure</li>
+          <li>Once deleted, you cannot recover any data or restore your account</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Alternative Options</h2>
+        <p>If you don't want to delete your account permanently, you can:</p>
+        <ul>
+          <li><strong>Sign Out:</strong> Simply sign out from Settings to stop syncing without deleting data</li>
+          <li><strong>Clear Local Data:</strong> Use the "Clear Cache" option to remove local data while keeping cloud backups</li>
+          <li><strong>Disable Notifications:</strong> Turn off reminders in the Notifications settings</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Need Help?</h2>
+        <p>If you're having issues with the app or have questions before deleting your account, please contact us:</p>
+        <p><strong>Email:</strong> <a href="mailto:nordveildev@gmail.com">nordveildev@gmail.com</a></p>
+        <p>We typically respond within 24-48 hours.</p>
+      </section>
+    </div>
+
+    <!-- Russian Content -->
+    <div id="content-ru" class="content">
+      <section>
+        <h2>Как удалить аккаунт</h2>
+        <p>Вы можете удалить свой аккаунт NordVeil Wallet и все связанные с ним данные непосредственно из мобильного приложения. Следуйте этим шагам:</p>
+
+        <ol>
+          <li>Откройте приложение <strong>NordVeil Wallet</strong> на вашем Android-устройстве</li>
+          <li>Перейдите в <strong>Настройки</strong> (нажмите на иконку шестеренки в нижней навигации)</li>
+          <li>Прокрутите вниз и нажмите на <strong>Профиль пользователя</strong> или <strong>Редактировать профиль</strong></li>
+          <li>Прокрутите до конца страницы профиля</li>
+          <li>Нажмите кнопку <strong>"Удалить аккаунт"</strong> (красная кнопка)</li>
+          <li>Внимательно прочитайте диалоговое окно подтверждения</li>
+          <li>Подтвердите удаление, нажав <strong>"Удалить"</strong></li>
+        </ol>
+
+        <div class="warning-box">
+          <strong>⚠️ Внимание:</strong> Удаление аккаунта является окончательным и необратимым. После подтверждения все ваши данные будут безвозвратно удалены.
+        </div>
+      </section>
+
+      <section>
+        <h2>Какие данные будут удалены</h2>
+        <p>При удалении аккаунта следующие данные будут безвозвратно удалены с наших серверов и вашего устройства:</p>
+        <ul>
+          <li><strong>Все транзакции</strong> - записи о доходах и расходах</li>
+          <li><strong>Категории</strong> - пользовательские и стандартные категории</li>
+          <li><strong>Счета</strong> - все финансовые счета (банковские счета, наличные, карты)</li>
+          <li><strong>Бюджеты</strong> - все настройки бюджета и данные отслеживания</li>
+          <li><strong>Желания/Цели</strong> - цели сбережений и элементы списка желаний</li>
+          <li><strong>Профиль пользователя</strong> - ваше имя, email и настройки профиля</li>
+          <li><strong>Синхронизированные данные</strong> - вся информация в облаке (если выполнен вход через Google)</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Срок хранения данных</h2>
+        <div class="info-box">
+          <p><strong>Немедленное удаление:</strong> Ваши данные удаляются сразу после подтверждения. Нет периода хранения или периода восстановления аккаунта.</p>
+        </div>
+        <p>Процесс удаления:</p>
+        <ul>
+          <li>Локальная база данных на вашем устройстве очищается мгновенно</li>
+          <li>Облачные данные (если есть) немедленно удаляются с серверов Firebase</li>
+          <li>После удаления не сохраняются резервные копии</li>
+          <li>Анонимная статистика использования (если собиралась) сохраняется только для аналитики</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Перед удалением</h2>
+        <p>Перед удалением аккаунта рассмотрите следующее:</p>
+        <ul>
+          <li>Экспортируйте данные, если хотите сохранить личную копию (используйте функцию резервного копирования в Настройках)</li>
+          <li>Убедитесь, что записали все незавершенные транзакции</li>
+          <li>Рассмотрите возможность временного отключения приложения, если не уверены</li>
+          <li>После удаления вы не сможете восстановить данные или аккаунт</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Альтернативные варианты</h2>
+        <p>Если вы не хотите удалять аккаунт навсегда, вы можете:</p>
+        <ul>
+          <li><strong>Выйти из аккаунта:</strong> Просто выйдите из Настроек, чтобы остановить синхронизацию без удаления данных</li>
+          <li><strong>Очистить локальные данные:</strong> Используйте опцию "Очистить кэш" для удаления локальных данных с сохранением облачных резервных копий</li>
+          <li><strong>Отключить уведомления:</strong> Отключите напоминания в настройках уведомлений</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Нужна помощь?</h2>
+        <p>Если у вас возникли проблемы с приложением или есть вопросы перед удалением аккаунта, свяжитесь с нами:</p>
+        <p><strong>Email:</strong> <a href="mailto:nordveildev@gmail.com">nordveildev@gmail.com</a></p>
+        <p>Обычно мы отвечаем в течение 24-48 часов.</p>
+      </section>
+    </div>
+
+    <hr>
+
+    <footer>
+      <p>&copy; 2025 NordVeil Wallet. All rights reserved.</p>
+      <p>Developed by NordVeil</p>
+    </footer>
+  </main>
+
+  <script>
+    function switchLanguage(lang) {
+      // Hide all content
+      document.querySelectorAll('.content').forEach(el => {
+        el.classList.remove('active');
+      });
+
+      // Remove active class from all buttons
+      document.querySelectorAll('.language-switcher button').forEach(btn => {
+        btn.classList.remove('active');
+      });
+
+      // Show selected content
+      document.getElementById('content-' + lang).classList.add('active');
+      document.getElementById('btn-' + lang).classList.add('active');
+    }
+  </script>
+</body>
+</html>
