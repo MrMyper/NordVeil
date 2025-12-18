@@ -185,18 +185,39 @@
           <li>Scroll down and tap on <strong>User Profile</strong> or <strong>Edit Profile</strong></li>
           <li>Scroll to the bottom of the profile page</li>
           <li>Tap the <strong>"Delete Account"</strong> button (red button)</li>
-          <li>Read the confirmation dialog carefully</li>
-          <li>Confirm the deletion by tapping <strong>"Delete"</strong></li>
+          <li>You will see a dialog with two deletion options:</li>
         </ol>
 
+        <h3>Option 1: Delete All Data</h3>
+        <p>This option will permanently delete:</p>
+        <ul>
+          <li>✅ All local data on your device (transactions, accounts, budgets, etc.)</li>
+          <li>✅ All cloud data from Firebase servers</li>
+          <li>✅ Your Google account connection</li>
+          <li>✅ All sync data</li>
+        </ul>
+        <p><strong>Result:</strong> Everything is permanently deleted. You cannot recover any data.</p>
+
+        <h3>Option 2: Keep Local Data Only</h3>
+        <p>This option will:</p>
+        <ul>
+          <li>✅ Delete your account and all cloud data from Firebase</li>
+          <li>✅ Remove your Google account connection</li>
+          <li>❌ <strong>Keep all local data on your device</strong> (transactions, accounts, budgets, categories, etc.)</li>
+        </ul>
+        <p><strong>Result:</strong> Your account is deleted, but you can continue using the app locally with all your existing data. You can also create a new account or sign in with a different Google account later.</p>
+
         <div class="warning-box">
-          <strong>⚠️ Warning:</strong> Account deletion is permanent and irreversible. Once you confirm, all your data will be permanently deleted.
+          <strong>⚠️ Warning:</strong> Both options permanently delete your account. Choose carefully based on whether you want to keep your local data or not.
         </div>
       </section>
 
       <section>
         <h2>What Data Will Be Deleted</h2>
-        <p>When you delete your account, the following data will be permanently removed from our servers and your device:</p>
+        <p>The data deleted depends on which option you choose:</p>
+
+        <h3>With "Delete All Data" option:</h3>
+        <p>All data is permanently removed from both your device and cloud servers:</p>
         <ul>
           <li><strong>All Transactions</strong> - Your income and expense records</li>
           <li><strong>Categories</strong> - Custom and default categories</li>
@@ -204,7 +225,21 @@
           <li><strong>Budgets</strong> - All budget settings and tracking data</li>
           <li><strong>Wishes/Goals</strong> - Your savings goals and wish list items</li>
           <li><strong>User Profile</strong> - Your name, email, and profile settings</li>
-          <li><strong>Sync Data</strong> - All cloud-synced information (if signed in with Google)</li>
+          <li><strong>Sync Data</strong> - All cloud-synced information from Firebase</li>
+        </ul>
+
+        <h3>With "Keep Local Data Only" option:</h3>
+        <p><strong>Deleted from cloud:</strong></p>
+        <ul>
+          <li>Your Google account authentication</li>
+          <li>All cloud-synced data from Firebase servers</li>
+          <li>Account connection and sync settings</li>
+        </ul>
+        <p><strong>Kept on your device:</strong></p>
+        <ul>
+          <li>All your transactions, categories, accounts, budgets, and goals remain on your device</li>
+          <li>You can continue using the app offline with all your data</li>
+          <li>You can sign in with a different account later or create a new one</li>
         </ul>
       </section>
 
@@ -234,12 +269,12 @@
       </section>
 
       <section>
-        <h2>Alternative Options</h2>
-        <p>If you don't want to delete your account permanently, you can:</p>
+        <h2>Which Option Should I Choose?</h2>
+        <p>Choose based on your needs:</p>
         <ul>
-          <li><strong>Sign Out:</strong> Simply sign out from Settings to stop syncing without deleting data</li>
-          <li><strong>Clear Local Data:</strong> Use the "Clear Cache" option to remove local data while keeping cloud backups</li>
-          <li><strong>Disable Notifications:</strong> Turn off reminders in the Notifications settings</li>
+          <li><strong>Delete All Data:</strong> Choose this if you want to completely remove all traces of your financial data and start fresh, or if you're selling/giving away your device</li>
+          <li><strong>Keep Local Data Only:</strong> Choose this if you want to switch Google accounts, stop cloud sync, or just delete your online account while continuing to use the app with your existing data</li>
+          <li><strong>Just Sign Out:</strong> If you only want to stop syncing temporarily, use the "Sign Out" option in Settings instead of deleting your account</li>
         </ul>
       </section>
 
@@ -263,18 +298,39 @@
           <li>Прокрутите вниз и нажмите на <strong>Профиль пользователя</strong> или <strong>Редактировать профиль</strong></li>
           <li>Прокрутите до конца страницы профиля</li>
           <li>Нажмите кнопку <strong>"Удалить аккаунт"</strong> (красная кнопка)</li>
-          <li>Внимательно прочитайте диалоговое окно подтверждения</li>
-          <li>Подтвердите удаление, нажав <strong>"Удалить"</strong></li>
+          <li>Вы увидите диалоговое окно с двумя вариантами удаления:</li>
         </ol>
 
+        <h3>Вариант 1: Удалить все данные</h3>
+        <p>Этот вариант навсегда удалит:</p>
+        <ul>
+          <li>✅ Все локальные данные на вашем устройстве (транзакции, счета, бюджеты и т.д.)</li>
+          <li>✅ Все облачные данные с серверов Firebase</li>
+          <li>✅ Подключение к Google аккаунту</li>
+          <li>✅ Все синхронизированные данные</li>
+        </ul>
+        <p><strong>Результат:</strong> Все безвозвратно удалено. Восстановить данные невозможно.</p>
+
+        <h3>Вариант 2: Оставить только локальные данные</h3>
+        <p>Этот вариант:</p>
+        <ul>
+          <li>✅ Удалит ваш аккаунт и все облачные данные из Firebase</li>
+          <li>✅ Отключит подключение к Google аккаунту</li>
+          <li>❌ <strong>Сохранит все локальные данные на устройстве</strong> (транзакции, счета, бюджеты, категории и т.д.)</li>
+        </ul>
+        <p><strong>Результат:</strong> Ваш аккаунт удален, но вы можете продолжить использовать приложение локально со всеми существующими данными. Позже вы сможете создать новый аккаунт или войти с другим Google аккаунтом.</p>
+
         <div class="warning-box">
-          <strong>⚠️ Внимание:</strong> Удаление аккаунта является окончательным и необратимым. После подтверждения все ваши данные будут безвозвратно удалены.
+          <strong>⚠️ Внимание:</strong> Оба варианта навсегда удаляют ваш аккаунт. Выбирайте внимательно в зависимости от того, хотите ли вы сохранить локальные данные или нет.
         </div>
       </section>
 
       <section>
         <h2>Какие данные будут удалены</h2>
-        <p>При удалении аккаунта следующие данные будут безвозвратно удалены с наших серверов и вашего устройства:</p>
+        <p>Удаляемые данные зависят от выбранного варианта:</p>
+
+        <h3>При выборе "Удалить все данные":</h3>
+        <p>Все данные безвозвратно удаляются как с устройства, так и с облачных серверов:</p>
         <ul>
           <li><strong>Все транзакции</strong> - записи о доходах и расходах</li>
           <li><strong>Категории</strong> - пользовательские и стандартные категории</li>
@@ -282,7 +338,21 @@
           <li><strong>Бюджеты</strong> - все настройки бюджета и данные отслеживания</li>
           <li><strong>Желания/Цели</strong> - цели сбережений и элементы списка желаний</li>
           <li><strong>Профиль пользователя</strong> - ваше имя, email и настройки профиля</li>
-          <li><strong>Синхронизированные данные</strong> - вся информация в облаке (если выполнен вход через Google)</li>
+          <li><strong>Синхронизированные данные</strong> - вся информация из Firebase</li>
+        </ul>
+
+        <h3>При выборе "Оставить только локальные данные":</h3>
+        <p><strong>Удаляется из облака:</strong></p>
+        <ul>
+          <li>Аутентификация Google аккаунта</li>
+          <li>Все синхронизированные данные с серверов Firebase</li>
+          <li>Подключение аккаунта и настройки синхронизации</li>
+        </ul>
+        <p><strong>Остается на устройстве:</strong></p>
+        <ul>
+          <li>Все ваши транзакции, категории, счета, бюджеты и цели остаются на устройстве</li>
+          <li>Вы можете продолжать использовать приложение офлайн со всеми данными</li>
+          <li>Позже вы можете войти с другим аккаунтом или создать новый</li>
         </ul>
       </section>
 
@@ -312,12 +382,12 @@
       </section>
 
       <section>
-        <h2>Альтернативные варианты</h2>
-        <p>Если вы не хотите удалять аккаунт навсегда, вы можете:</p>
+        <h2>Какой вариант выбрать?</h2>
+        <p>Выбирайте в зависимости от ваших потребностей:</p>
         <ul>
-          <li><strong>Выйти из аккаунта:</strong> Просто выйдите из Настроек, чтобы остановить синхронизацию без удаления данных</li>
-          <li><strong>Очистить локальные данные:</strong> Используйте опцию "Очистить кэш" для удаления локальных данных с сохранением облачных резервных копий</li>
-          <li><strong>Отключить уведомления:</strong> Отключите напоминания в настройках уведомлений</li>
+          <li><strong>Удалить все данные:</strong> Выбирайте этот вариант, если хотите полностью удалить все следы ваших финансовых данных и начать с чистого листа, или если вы продаете/отдаете свое устройство</li>
+          <li><strong>Оставить только локальные данные:</strong> Выбирайте этот вариант, если хотите переключиться на другой Google аккаунт, остановить облачную синхронизацию, или просто удалить онлайн-аккаунт, продолжая использовать приложение с существующими данными</li>
+          <li><strong>Просто выйти:</strong> Если вы хотите только временно остановить синхронизацию, используйте опцию "Выйти" в Настройках вместо удаления аккаунта</li>
         </ul>
       </section>
 

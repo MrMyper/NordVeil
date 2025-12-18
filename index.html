@@ -18,7 +18,7 @@
         .button {
             display: inline-block;
             padding: 15px 30px;
-            margin: 20px;
+            margin: 10px;
             background: #14b8a6;
             color: white;
             text-decoration: none;
@@ -28,15 +28,38 @@
         .button:hover {
             background: #0d9488;
         }
+        .button-secondary {
+            display: inline-block;
+            padding: 15px 30px;
+            margin: 10px;
+            background: #6b7280;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 16px;
+            border: 2px solid #4b5563;
+        }
+        .button-secondary:hover {
+            background: #4b5563;
+        }
+        .buttons-container {
+            margin: 30px 0;
+        }
     </style>
 </head>
 <body>
     <h1>Nordveil Wallet</h1>
     <p>Personal finance app for Android. Track your expenses, manage budgets, and sync your data across devices.</p>
 
-    <a href="https://play.google.com/store/apps/details?id=com.nordveil.wallet" class="button">
-        Download on Google Play
-    </a>
+    <div class="buttons-container">
+        <a href="https://play.google.com/store/apps/details?id=com.nordveil.wallet" class="button">
+            Download on Google Play
+        </a>
+        <br>
+        <a href="account-deletion.html" class="button-secondary">
+            Delete Account
+        </a>
+    </div>
 
     <h2>Features</h2>
     <ul style="text-align: left;">
